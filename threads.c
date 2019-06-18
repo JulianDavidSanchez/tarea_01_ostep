@@ -3,7 +3,6 @@
 #include "common.h"
 #include "common_threads.h"
 #include "mycommon.h"
-#include <pthread.h>
 
 volatile int counter = 0;
 volatile puerta(puerta); 
