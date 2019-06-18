@@ -9,9 +9,9 @@ Archivo: [mem.c](mem.c)
 
 mem.c se ejecuta en el mismo espacio de memoria cada vez lo haga. Para llevar a cabo ello, como  superusuario configuramos:
  
-´´´´
+```
 echo 0 > /proc/sys/kernel/randomize_va_space
-´´´
+```
 ## threads.c
 Archivo: [threads.c](threads.c)
 
@@ -19,11 +19,11 @@ threads.c utiliza puertas para realizar su funcion. Usando las librerías: [myco
 
 Los hilos al utilizar el método worker cierran la puerta, suman a counter y vuelven a abrir la puerta. Obteniendo un proceso exitoso al alterar la variable global.
 
-´´´´´
+```
 cerrar_puerta(puerta);
 counter ++;
 abrir_puerta(puerta);
-´´´´´
+```
 
 ## io.c
 Archivo: [io.c](io.c)
